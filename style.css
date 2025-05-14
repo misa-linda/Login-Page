@@ -1,0 +1,145 @@
+/* Réinitialise les bordures et espaces internes par défaut */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+/* Corps de la page */
+body {
+    background-color: rgb(210, 172, 245);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+/* Arrière-plan contenant les formes */
+.background {
+    width: 90%;
+    max-width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+  
+/* Formes circulaires */
+.background .shape {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+  
+/* Première forme (en haut à gauche) */
+.shape:first-child {
+    background: linear-gradient(#941de4, #dc84f7);
+    top: -80px;
+    left: -80px;
+}
+
+/* Deuxième forme (en bas à droite) */
+.shape:last-child {
+    background: linear-gradient(to right, #d3337e, #f765cb);
+    bottom: -80px;
+    right: -80px;
+}
+
+/* Formulaire */
+form {
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(52, 6, 66, 0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 20px solid rgba(16, 15, 16, 0.1);
+    box-shadow: 0 0 50px rgba(6, 6, 6, 0.7);
+    padding: 40px 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #080303;
+    border: none;
+}
+  
+/* Titre du formulaire */
+form h1 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+  
+/* Étiquettes */
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 19px;
+    font-weight: 500;
+}
+  
+/* Champs de saisie */
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+  
+/* Bouton principal */
+button {
+    margin-top: 50px;
+    width: 100%;
+    background-color:#f787db;
+    color: #070007;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+button:hover {
+    transform: scale(1.03);
+}
+  
+/* Focus champs et bouton */
+button:focus, input:focus {
+    outline: 2px solid #fa86d3;
+    outline-offset: 3px;
+}
+  
+/* Conteneur social */
+.social {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+  
+/* Style des boutons sociaux */
+.social button {
+    flex: 1; /* Les boutons prennent la même largeur */
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(109, 9, 167, 0.27);
+    color: #00000a;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.social button i {
+    margin-right: 10px;
+}
+
+/* Effet hover */
+.social button:hover {
+    background-color: rgba(252, 232, 244, 0.47);
+}
