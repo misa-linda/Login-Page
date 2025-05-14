@@ -1,5 +1,5 @@
 Projet : Login Page
- - Ce projet est un exercice de création d'une page de connexion avec HTML et CSS.
+ - ce projet est un exercice de création d'une page de connexion avec HTML et CSS.
 
 Contenu :
  - deux champs : email et mot de passe.
